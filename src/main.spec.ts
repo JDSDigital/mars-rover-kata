@@ -5,7 +5,7 @@ describe("Default test", () => {
   it("given a grid with no obstacles, input MMRMMLM gives output 2:3:N", () => {
     const rover = new MarsRoverClass()
 
-    rover.MarsRover("10:10")
+    rover.MarsRover("9:9")
 
     const result = rover.execute("MMRMMLM")
 
@@ -15,7 +15,7 @@ describe("Default test", () => {
   it("given a grid with no obstacles, input MMMMMMMMMM gives output 0:0:N (due to wrap-around)", () => {
     const rover = new MarsRoverClass()
 
-    rover.MarsRover("10:10")
+    rover.MarsRover("9:9")
 
     const result = rover.execute("MMMMMMMMMM")
 
@@ -25,7 +25,7 @@ describe("Default test", () => {
   it("given a grid with no obstacles, input MMMM gives output 0:4:N", () => {
     const rover = new MarsRoverClass()
 
-    rover.MarsRover("10:10")
+    rover.MarsRover("9:9")
 
     const result = rover.execute("MMMM")
 
